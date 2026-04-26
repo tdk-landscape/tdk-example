@@ -1,0 +1,14 @@
+{
+  "appName": "identity-app",
+  "domain": "identity",
+  "type": "frontend",
+  "stack": "identity",
+  "port": 3000,
+  "description": "User dashboard and profile management UI",
+  "dependencies": [
+    "identity-api"
+  ],
+  "healthCheck": {
+    "enabled": false
+  }
+}

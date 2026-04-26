@@ -1,0 +1,13 @@
+{
+  "appName": "appointment-api",
+  "domain": "appointment",
+  "type": "backend",
+  "stack": "appointment",
+  "port": 4001,
+  "description": "Scheduling and booking API",
+  "dependencies": [],
+  "healthCheck": {
+    "enabled": true,
+    "path": "/health"
+  }
+}

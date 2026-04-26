@@ -1,0 +1,10 @@
+{
+  "appName": "appointment-app",
+  "domain": "appointment",
+  "type": "frontend",
+  "stack": "appointment",
+  "port": 3001,
+  "description": "Booking interface UI",
+  "dependencies": ["appointment-api"],
+  "healthCheck": { "enabled": false }
+}

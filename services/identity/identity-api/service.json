@@ -1,0 +1,13 @@
+{
+  "appName": "identity-api",
+  "domain": "identity",
+  "type": "backend",
+  "stack": "identity",
+  "port": 4000,
+  "description": "Authentication and user management API",
+  "dependencies": [],
+  "healthCheck": {
+    "enabled": true,
+    "path": "/health"
+  }
+}
