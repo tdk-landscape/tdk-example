@@ -1,6 +1,11 @@
 # TDK Example Tiltfile
 # Minimal Tiltfile demonstrating TDK PSR model
 
+# Must be set before the extension loads: discovery/constants.star reads it to
+# find this project's spec.master (services/identity, services/appointment)
+# instead of falling back to the beauty-crm monorepo's default scan roots.
+os.environ['TDK_PROJECT_ROOT'] = config.main_dir
+
 # Load TDK extension
 v1alpha1.extension_repo(name='tdk-cli', url='https://github.com/tdk-landscape/tdk-cli')
 v1alpha1.extension(name='tdk-cli', repo_name='tdk-cli', repo_path='')

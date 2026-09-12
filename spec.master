@@ -1,0 +1,13 @@
+#!/usr/bin/env starlark
+# =============================================================================
+# 🎨 PROJECT SPEC - Discovery Overrides
+# =============================================================================
+# Read by tdk-cli's discovery/constants.star (via TDK_PROJECT_ROOT) to scan
+# this project's actual service layout instead of the beauty-crm defaults
+# (services/product, services/platform, shared-product-engineering, ...).
+
+SPEC_OVERRIDE = struct(
+    DISCOVERY = struct(
+        RESOURCE_PATTERNS = ["services/identity/*", "services/appointment/*"],
+    ),
+)
