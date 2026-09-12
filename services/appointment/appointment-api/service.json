@@ -1,6 +1,7 @@
 {
   "appName": "appointment-api",
   "domain": "appointment",
+  "appType": "backend",
   "type": "backend",
   "stack": "appointment",
   "port": 4001,

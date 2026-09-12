@@ -1,6 +1,7 @@
 {
   "appName": "identity-app",
   "domain": "identity",
+  "appType": "frontend",
   "type": "frontend",
   "stack": "identity",
   "port": 3000,

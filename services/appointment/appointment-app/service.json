@@ -1,6 +1,7 @@
 {
   "appName": "appointment-app",
   "domain": "appointment",
+  "appType": "frontend",
   "type": "frontend",
   "stack": "appointment",
   "port": 3001,

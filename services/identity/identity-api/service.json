@@ -1,6 +1,7 @@
 {
   "appName": "identity-api",
   "domain": "identity",
+  "appType": "backend",
   "type": "backend",
   "stack": "identity",
   "port": 4000,
