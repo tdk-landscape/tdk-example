@@ -13,7 +13,7 @@
   &nbsp;&nbsp;/&nbsp;&nbsp;
   <a href="#extend-it">Extend it</a>
   &nbsp;&nbsp;/&nbsp;&nbsp;
-  <a href="https://github.com/tdk-landscape/tdk-cli">TDK CLI</a>
+  <a href="https://github.com/tdk-landscape/tdk-cli-core">TDK CLI</a>
 </p>
 
 <br>
@@ -35,7 +35,7 @@ You declare the service. TDK discovers the landscape, resolves dependencies, all
 - [Docker](https://docs.docker.com/get-docker/) is running.
 - [Tilt](https://docs.tilt.dev/install.html) is installed.
 - [Bun](https://bun.sh/docs/installation) is installed.
-- [TDK CLI](https://github.com/tdk-landscape/tdk-cli#installation) is available as `tdk`.
+- [TDK CLI](https://github.com/tdk-landscape/tdk-cli-core#installation) is available as `tdk`.
 
 ```bash
 git clone https://github.com/tdk-landscape/tdk-example.git
@@ -164,7 +164,7 @@ Use the same pattern for the other three resources.
 - [`TILT_SERVICE_DEFAULTS.star`](TILT_SERVICE_DEFAULTS.star) centralizes ports, health checks, memory limits, images, and network defaults.
 - [`TILT_TECH_STACK.star`](TILT_TECH_STACK.star) defines the generated behavior for each supported runtime.
 - [`services/`](services) contains the smallest working backend and frontend examples.
-- [TDK CLI](https://github.com/tdk-landscape/tdk-cli) documents installation, generation commands, and the full PSR workflow.
+- [TDK CLI](https://github.com/tdk-landscape/tdk-cli-core) documents installation, generation commands, and the full PSR workflow.
 
 ---
 
@@ -175,7 +175,7 @@ Use the same pattern for the other three resources.
 <p align="center">
   <a href="https://github.com/tdk-landscape">TDK Landscape</a>
   &nbsp;&nbsp;/&nbsp;&nbsp;
-  <a href="https://github.com/tdk-landscape/tdk-cli">CLI</a>
+  <a href="https://github.com/tdk-landscape/tdk-cli-core">CLI</a>
   &nbsp;&nbsp;/&nbsp;&nbsp;
   <a href="https://docs.tilt.dev">Tilt</a>
   &nbsp;&nbsp;/&nbsp;&nbsp;
