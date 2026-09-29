@@ -127,7 +127,7 @@ function App() {
         <h2 style={{ marginTop: 0 }}>Quick Actions</h2>
         <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
           <a
-            href="http://localhost:4000/api/users"
+            href={`${IDENTITY_API_URL}/api/users`}
             target="_blank"
             rel="noopener noreferrer"
             style={{
@@ -142,7 +142,7 @@ function App() {
             📋 View API Users
           </a>
           <a
-            href="http://localhost:4000/health"
+            href={`${IDENTITY_API_URL}/health`}
             target="_blank"
             rel="noopener noreferrer"
             style={{
