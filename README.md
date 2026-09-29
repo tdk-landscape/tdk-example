@@ -42,10 +42,11 @@ You declare the service. TDK discovers the landscape, resolves dependencies, all
 ```bash
 git clone https://github.com/tdk-landscape/tdk-example.git
 cd tdk-example
+tdk project --yes
 tdk up
 ```
 
-TDK starts both stacks from their resource manifests. There is no root package to install; each resource owns its own package and generated development workflow.
+`tdk project --yes` creates the project configuration and discovers the existing `service.json` manifests. TDK then starts both stacks. There is no root package to install; each resource owns its own package and generated development workflow.
 
 ```bash
 # Start one stack only
