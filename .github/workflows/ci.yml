@@ -1,4 +1,4 @@
-name: TDK CI
+name: 🧪 TDK Example CI
 
 on:
   pull_request:
