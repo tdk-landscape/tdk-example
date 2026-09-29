@@ -1,11 +1,13 @@
 import { useState, useEffect } from 'react'
 
+const APPOINTMENT_API_URL = import.meta.env.VITE_APPOINTMENT_API_URL || 'http://api.tdk-example.localhost/api/appointment'
+
 function App() {
   const [appointments, setAppointments] = useState<Array<{ id: number; title: string; time: string }>>([])
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    fetch('http://localhost:4001/api/appointments')
+    fetch(`${APPOINTMENT_API_URL}/api/appointments`)
       .then(res => res.json())
       .then(data => {
         setAppointments(data.appointments || [])
