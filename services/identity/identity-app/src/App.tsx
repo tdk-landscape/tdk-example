@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react'
 
+const IDENTITY_API_URL = import.meta.env.VITE_IDENTITY_API_URL || 'http://api.tdk-example.localhost/api/identity'
+
 function App() {
   const [users, setUsers] = useState<Array<{ id: number; email: string; name: string }>>([])
   const [loading, setLoading] = useState(true)
@@ -7,12 +9,12 @@ function App() {
 
   useEffect(() => {
     // Check API health
-    fetch('http://localhost:4000/health')
+    fetch(`${IDENTITY_API_URL}/health`)
       .then(res => res.ok ? setApiStatus('online') : setApiStatus('offline'))
       .catch(() => setApiStatus('offline'))
 
     // Fetch users
-    fetch('http://localhost:4000/api/users')
+    fetch(`${IDENTITY_API_URL}/api/users`)
       .then(res => res.json())
       .then(data => {
         setUsers(data.users || [])
@@ -89,7 +91,7 @@ function App() {
           </span>
         </div>
         <p style={{ color: '#a0a0a0', margin: 0 }}>
-          Identity API is running at <code style={{ background: '#0f3460', padding: '2px 6px', borderRadius: '4px' }}>http://localhost:4000</code>
+          Identity API is running at <code style={{ background: '#0f3460', padding: '2px 6px', borderRadius: '4px' }}>{IDENTITY_API_URL}</code>
         </p>
       </div>
 

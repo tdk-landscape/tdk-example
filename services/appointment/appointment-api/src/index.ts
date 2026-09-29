@@ -3,6 +3,10 @@ import { logger } from 'hono/logger';
 import { serve } from '@hono/node-server';
 
 const app = new Hono();
+app.use('*', async (c, next) => {
+  c.header('Access-Control-Allow-Origin', '*');
+  await next();
+});
 app.use('*', logger());
 
 // Health checks
